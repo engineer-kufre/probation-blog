@@ -95,9 +95,68 @@ nav-logo .logo > img {
     width: 100%;
 }
 
-.loginimage {
-    margin-left: 80px;
-    margin-top: 20px;
-    
-    
+.container-login {
+    width: 100%;  
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;  
+}
+  
+.container-login::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.65);
+}
+
+.form_header {
+    color: rgb(2, 2, 70);
+    text-align: center;
+}
+.input {
+    height: 35px;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    padding: 0 10px 0 65px;
+}
+.login_form {
+    border: 1px solid white;
+    padding-left:2em;
+    padding-right: 2em;
+    padding-bottom: 5em;
+    width: 300px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 0 auto;
+}
+#mybutton{
+    border-radius: 5px;
+    background-color: rgb(134, 134, 156);
+    border: none;
+    color: rgb(2, 2, 70);
+    float: left;
+}
+#mybutton:hover {
+    background-color: rgb(2, 2, 70);
+    padding-right: 5px;
+    color: white;
 }
