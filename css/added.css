@@ -82,8 +82,21 @@ nav-logo .logo > img {
     border-radius: 5px;
 }
 
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+#content-wrap {
+    padding-bottom: 2.5rem;
+} 
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
 .myfooter {
-    margin-top: 500px;
     background-color: white;
     color: rgb(2, 2, 70);
     text-align: center;
@@ -132,11 +145,11 @@ nav-logo .logo > img {
     text-align: center;
 }
 .input {
-    height: 35px;
+    height: 45px;
     margin: 0 auto;
     display: block;
     width: 100%;
-    padding: 0 10px 0 65px;
+    text-align: center;
 }
 .login_form {
     border: 1px solid white;
