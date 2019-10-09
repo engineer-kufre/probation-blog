@@ -145,11 +145,11 @@ nav-logo .logo > img {
     text-align: center;
 }
 .input {
-    height: 35px;
+    height: 45px;
     margin: 0 auto;
     display: block;
     width: 100%;
-    padding: 0 10px 0 65px;
+    text-align: center;
 }
 .login_form {
     border: 1px solid white;
