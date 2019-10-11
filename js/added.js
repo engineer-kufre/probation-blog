@@ -102,6 +102,36 @@ $(document).ready(function() {
     });
   });
 
+  // Admin Signin
+
+  $('.signinBtn').click(function(event) {
+    event.preventDefault();
+    const usernameSI = $('#usernameSI').val();
+    const passwordSI = $('#passwordSI').val();
+    $.ajax({
+        method: 'GET',
+        url: `http://localhost:3000/admin?username=${usernameSI}&password=${passwordSI}`,
+        data: {
+            username: usernameSI,
+            password: passwordSI,
+        },
+        success: function(response) {
+            if (response.length) {
+                localStorage.setItem('username', usernameSI);
+                window.location.assign('createpost.html');
+            } else {
+                alert('Username or Password Incorrect');
+            }
+        },
+    });
+});
+
+// User Logout
+
+$('.userlogout').click(function() {
+  localStorage.clear();
+});
+
   // CKEditor
 
   ClassicEditor
