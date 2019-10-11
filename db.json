@@ -1,11 +1,32 @@
 {
-     "users": [
-        {
-            "id": 1,
-            "fullname": "Kufreabasi",
-            "username": "Ku",
-            "email": "eijioma@inmarng.com",
-            "password": "itah"
-          }
-      ]
-  }
+  "users": [
+    {
+      "id": 1,
+      "fullname": "Kufreabasi",
+      "username": "Ku",
+      "email": "eijioma@inmarng.com",
+      "password": "itah"
+    },
+    {
+      "fullname": "Kufreabasi Ita",
+      "username": "Kufre",
+      "email": "engineer_kufre@yahoo.com",
+      "password": "ita",
+      "id": 2
+    },
+    {
+      "fullname": "Adamson Willy",
+      "username": "Adams",
+      "email": "chidichukwuemeka1@gmail.com",
+      "password": "adams",
+      "id": 3
+    },
+    {
+      "fullname": "gdls",
+      "username": "dga",
+      "email": "eijiomaa@inmarng.com",
+      "password": ".khv",
+      "id": 4
+    }
+  ]
+}
