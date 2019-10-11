@@ -10,16 +10,25 @@
     <link type="text/css" rel="stylesheet" href="css/added.css"/>
 </head>
 <body>
-    <div class="content">
-        <h2 class="page-title">Create Posts</h2>
-        <form action="createpost.html" method="post">
-            <div>
-                <label>Title:</label>
-                <input type="text" name="title" class="text-input">
-            </div>
-        </form>
+    <div class="container-login" style="background-image: url('img/Design.jpg');">
+        <div class="content">
+            <h2 class="page-title"><b>Create Posts</b></h2>
+                <form action="createpost.html" method="post">
+                    <div>
+                        <label>Title:</label> <br>
+                        <input type="text" name="title" class="text-input">
+                    </div>
+                    <div>
+                        <label>Post Body:</label> <br>
+                        <textarea name="body" id="body"></textarea>
+                    </div>
+                    <button id="mybutton" class="mybutton" type="submit">Create</button>
+                </form>
+        </div> 
     </div>
+    
     <script src="js/jquery.js"></script>
     <script src="js/ckeditor.js"></script>
+    <script src="js/added.js"></script>
 </body>
 </html>

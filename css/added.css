@@ -190,3 +190,25 @@ nav-logo .logo > img {
     padding-right: 5px;
     color: white;
 }
+
+.content {
+    width:75%;
+    margin: auto;
+    border: 1px solid white;
+    padding-left:2em;
+    padding-right: 2em;
+    padding-bottom: 5em;
+    border-radius: 10px;
+    background-color: white;
+}
+.page-title {
+    text-align: center;
+    color: rgb(2, 2, 70);
+    padding-top: 1em;
+}
+.text-input {
+    width: 100%;
+}
+form div {
+    margin-bottom: 20px;
+}
