@@ -28,5 +28,35 @@
       "password": ".khv",
       "id": 4
     }
+  ],
+  "admin": [
+    {
+      "id": 1,
+      "fullname": "Kuf",
+      "username": "Kuf",
+      "email": "eijioma@inmarng.com",
+      "password": "itd"
+    },
+    {
+      "fullname": "Administrator",
+      "username": "Admin",
+      "email": "admin@admin.com",
+      "password": "admin",
+      "id": 2
+    },
+    {
+      "fullname": "Administrator",
+      "username": "Admin",
+      "email": "admin@admin.com",
+      "password": "admin",
+      "id": 3
+    },
+    {
+      "fullname": "Kufreabasi Ita",
+      "username": "Kufreabasi",
+      "email": "engineer_kufre@yahoo.com",
+      "password": "kufre",
+      "id": 4
+    }
   ]
 }

@@ -13,19 +13,19 @@
     <div class="container-login" style="background-image: url('img/Design.jpg');">
         
         <div>
-            <form class="login_form">
+            <form class="login_form" id="signup">
                 <h3 class="form_header"><b>ADMIN SIGNUP</b></h3><br>
-                <input class="input" type="text" name="fullname" id="fullname" placeholder="Full Name"> <br>
-                <input class="input" type="text" name="Username" id="username" placeholder="Admin Username"> <br>
-                <input class="input" type="email" name="email" id="email" placeholder="Admin Email Address"> <br>
-                <input class="input" type="password" name="Password" id="password" placeholder="Admin Password"> <br>
-                <button id="mybutton" class="mybutton" type="submit">Sign Up</button>
+                <input class="input" type="text" name="fullname" id="fullname" placeholder="Full Name" required> <br>
+                <input class="input" type="text" name="Username" id="username" placeholder="Admin Username" required> <br>
+                <input class="input" type="email" name="email" id="email" placeholder="Admin Email Address" required> <br>
+                <input class="input" type="password" name="Password" id="password" placeholder="Admin Password" required> <br>
+                <button id="mybutton" class="signupSubBtn mybutton" type="submit">Sign Up</button>
                 <p style="float: right; margin-top: 15px;">Log In <a style="text-decoration: none" href="adminlogin.html">here!</a></p>
             </form>
             
         </div>
     </div>
-    <script src="/js/jquery.js"></script>
-    <script src="/js/added.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/added.js"></script>
 </body>
 </html>
