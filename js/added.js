@@ -66,6 +66,42 @@ $(document).ready(function() {
     localStorage.clear();
   });
 
+  // Admin Signup
+
+  $('.signupSubBtn').click(function(event) {
+    event.preventDefault();
+    const fullname = $('#fullname').val();
+    const username = $('#username').val();
+    const email = $('#email').val();
+    const password = $('#password').val();
+    $.ajax({
+      method: 'GET',
+      url: `http://localhost:3000/admin?email=${email}`,
+      data: {
+        email,
+      },
+      success: function(response) {
+        if (response.length) {
+          alert('User already exist');
+        } else {
+          $.ajax({
+            method: 'POST',
+            url: 'http://localhost:3000/admin',
+            data: {
+              fullname,
+              username,
+              email,
+              password,
+            },
+            success: function() {
+              window.location.assign('adminlogin.html');
+            },
+          });
+        }
+      },
+    });
+  });
+
   // CKEditor
 
   ClassicEditor
