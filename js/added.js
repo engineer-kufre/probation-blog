@@ -133,7 +133,7 @@ $(document).ready(function() {
     window.location.assign('adminlogin.html');
   });
 
-  // Create Post
+  // POST To DB
 
   var $title = $('#title');
   var $body = $('#body');
@@ -155,6 +155,20 @@ $(document).ready(function() {
       }
     });
   });
+
+  // GET POST To Admin
+
+  var $adminposts = $('#adminart');
+    $.ajax({
+        type: 'GET',
+        url: 'http://localhost:3000/posts',
+        success: function(posts){
+            $.each(posts, function(i, post) {
+                $adminposts.append(`<li style="list-style-type:none;" data-id=${post.id}><a href="index.html"><h5><span class="noedit title">${post.title}</span></h5></a><br><input id="updateTitle" class="edit text-input" placeholder="Update Title"/><br><br><p><span class="noedit text">${post.body}</span><br><textarea id="updateText" class="edit text text-input" placeholder="Update Body"></textarea></p><button data-id=${post.id} id="updtbutton" class="updtbutton noedit myadminbutton">Update</button> <button data-id=${post.id} id="saveButton" class="saveButton edit myadminbutton">Save</button> <button data-id=${post.id} id="cancelButton" class="cancelButton edit myadminbutton">Cancel</button> <button data-id=${post.id} id="delbutton" class="delbutton myadminbutton">Delete</button><hr><br><br>`);
+            });
+            
+        }
+    });
 
   // CKEditor
 
