@@ -151,7 +151,8 @@ $(document).ready(function() {
         $title.append('<a href="index.html"><h5>'+newPost.title+'</h5></a>');
         $body.append('<p>'+newPost.body+'</p>');
         $('#postform').trigger('reset');
-        alert('Article Posted');
+        alert('Article Posted'); 
+        location.reload();       
       }
     });
   });
