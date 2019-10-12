@@ -65,5 +65,22 @@
       "password": ",ucj",
       "id": 5
     }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Kuf",
+      "body": "Kuf"
+    },
+    {
+      "title": "\\wyw4h",
+      "body": "",
+      "id": 2
+    },
+    {
+      "title": "llllllllll",
+      "body": "",
+      "id": 3
+    }
   ]
 }
