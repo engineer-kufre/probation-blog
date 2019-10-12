@@ -68,9 +68,10 @@
   ],
   "posts": [
     {
-      "title": "Story",
-      "body": "Story story story story",
-      "id": 8
+      "title": "First Poster",
+      "link": "post.html",
+      "body": "FirstFirstFirstFirstFirstFirstFirstFirstFirster",
+      "id": 2
     }
   ]
 }
