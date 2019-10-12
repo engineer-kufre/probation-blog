@@ -136,11 +136,13 @@ $(document).ready(function() {
   // POST To DB
 
   var $title = $('#title');
+  var $link = $('#link');
   var $body = $('#body');
   $('#newPostBtn').on('click', function(event){
     event.preventDefault();
     var post = {
       title: $title.val(),
+      link: $link.val(),
       body: $body.val(),
     };
     $.ajax({
@@ -149,6 +151,7 @@ $(document).ready(function() {
       data: post,
       success: function(newPost){
         $title.append('<a href="index.html"><h5>'+newPost.title+'</h5></a>');
+        $link.append(newPost.link);
         $body.append('<p>'+newPost.body+'</p>');
         $('#postform').trigger('reset');
         alert('Article Posted'); 
@@ -165,7 +168,7 @@ $(document).ready(function() {
     url: 'http://localhost:3000/posts',
     success: function(posts){
       $.each(posts, function(i, post) {
-        $adminposts.append(`<li style="list-style-type:none;" data-id=${post.id}><a href="index.html"><h5><span class="noedit title">${post.title}</span></h5></a><input id="updateTitle" class="edit titles text-input" placeholder="Update Title"/><p><span class="noedit body">${post.body}</span><br><textarea id="updateText" class="edit body text-input" placeholder="Update Body"></textarea></p><button data-id=${post.id} id="updtbutton" class="updtbutton noedit myadminbutton">Update</button> <button data-id=${post.id} id="saveButton" class="saveButton edit myadminbutton">Save</button> <button data-id=${post.id} id="cancelButton" class="cancelButton edit myadminbutton">Cancel</button> <button data-id=${post.id} id="delbutton" class="delbutton myadminbutton">Delete</button><hr><br><br>`);
+        $adminposts.append(`<li style="list-style-type:none;" data-id=${post.id}><a href="${post.link}"><h5><span class="noedit title">${post.title}</span></h5></a><input id="updateTitle" class="edit titles text-input" placeholder="Update Title"/><p><span class="noedit link">${post.link}</span><br><input id="updateLink" class="edit link text-input" placeholder="Update Link"/></p><p><span class="noedit body">${post.body}</span><br><textarea id="updateText" class="edit body text-input" placeholder="Update Body"></textarea></p><button data-id=${post.id} id="updtbutton" class="updtbutton noedit myadminbutton">Update</button> <button data-id=${post.id} id="saveButton" class="saveButton edit myadminbutton">Save</button> <button data-id=${post.id} id="cancelButton" class="cancelButton edit myadminbutton">Cancel</button> <button data-id=${post.id} id="delbutton" class="delbutton myadminbutton">Delete</button><hr><br><br>`);
       });
     }
   });
@@ -190,6 +193,7 @@ $(document).ready(function() {
   $adminposts.delegate('.updtbutton', 'click', function(){
     var $li = $(this).closest('li');
     $li.find('input.titles').val($li.find('span.title').html());
+    $li.find('input.link').val($li.find('span.link').html());
     $li.find('textarea.body').val($li.find('span.body').html());
     $li.addClass('edit');
   });
@@ -206,6 +210,7 @@ $(document).ready(function() {
     var $li = $(this).closest('li');
     var post = {
         title:$li.find('input.titles').val(),
+        link:$li.find('input.link').val(),
         body:$li.find('textarea.body').val(),
     };
     $.ajax({
@@ -214,8 +219,10 @@ $(document).ready(function() {
         data: post,
         success: function(newPosts){
           $li.find('span.titles').html(post.title);
+          $li.find('span.link').html(post.link);
           $li.find('span.body').html(post.body);
           $li.removeClass('edit');
+          location.reload(); 
         }
     });
   });
