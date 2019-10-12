@@ -232,3 +232,13 @@ form div {
 .managepost {
     margin-top: 1em;
 }
+
+ul li .edit {
+    display: none;
+}
+ul li.edit .edit{
+    display: initial;
+}
+ul li.edit .noedit{
+    display: none;
+}
