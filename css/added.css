@@ -204,7 +204,7 @@ nav-logo .logo > img {
 .page-title {
     text-align: center;
     color: rgb(2, 2, 70);
-    padding-top: 1em;
+    padding-top: .5em;
 }
 .text-input {
     width: 100%;
