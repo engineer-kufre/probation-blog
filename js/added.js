@@ -165,9 +165,8 @@ $(document).ready(function() {
     url: 'http://localhost:3000/posts',
     success: function(posts){
       $.each(posts, function(i, post) {
-        $adminposts.append(`<li style="list-style-type:none;" data-id=${post.id}><a href="index.html"><h5><span class="noedit title">${post.title}</span></h5></a><br><input id="updateTitle" class="edit titles text-input" placeholder="Update Title"/><br><br><p><span class="noedit body">${post.body}</span><br><textarea id="updateText" class="edit body text-input" placeholder="Update Body"></textarea></p><button data-id=${post.id} id="updtbutton" class="updtbutton noedit myadminbutton">Update</button> <button data-id=${post.id} id="saveButton" class="saveButton edit myadminbutton">Save</button> <button data-id=${post.id} id="cancelButton" class="cancelButton edit myadminbutton">Cancel</button> <button data-id=${post.id} id="delbutton" class="delbutton myadminbutton">Delete</button><hr><br><br>`);
+        $adminposts.append(`<li style="list-style-type:none;" data-id=${post.id}><a href="index.html"><h5><span class="noedit title">${post.title}</span></h5></a><input id="updateTitle" class="edit titles text-input" placeholder="Update Title"/><p><span class="noedit body">${post.body}</span><br><textarea id="updateText" class="edit body text-input" placeholder="Update Body"></textarea></p><button data-id=${post.id} id="updtbutton" class="updtbutton noedit myadminbutton">Update</button> <button data-id=${post.id} id="saveButton" class="saveButton edit myadminbutton">Save</button> <button data-id=${post.id} id="cancelButton" class="cancelButton edit myadminbutton">Cancel</button> <button data-id=${post.id} id="delbutton" class="delbutton myadminbutton">Delete</button><hr><br><br>`);
       });
-        
     }
   });
 
@@ -179,7 +178,9 @@ $(document).ready(function() {
         type: 'DELETE',
         url: 'http://localhost:3000/posts/' + $(this).attr('data-id'),
         success: function(){
-            $li.remove();
+          $li.fadeOut(300, function(){
+            $(this).remove();
+          });
         }
     });
   });
@@ -191,7 +192,33 @@ $(document).ready(function() {
     $li.find('input.titles').val($li.find('span.title').html());
     $li.find('textarea.body').val($li.find('span.body').html());
     $li.addClass('edit');
-});
+  });
+
+  // Manage Post CANCEL
+
+  $adminposts.delegate('.cancelButton', 'click', function(){
+    $(this).closest('li').removeClass('edit');
+  });
+
+  // Manage Post SAVE
+
+  $adminposts.delegate('.saveButton', 'click', function(){
+    var $li = $(this).closest('li');
+    var post = {
+        title:$li.find('input.titles').val(),
+        body:$li.find('textarea.body').val(),
+    };
+    $.ajax({
+        type: 'PUT',
+        url: 'http://localhost:3000/posts/' + $li.attr('data-id'),
+        data: post,
+        success: function(newPosts){
+          $li.find('span.titles').html(post.title);
+          $li.find('span.body').html(post.body);
+          $li.removeClass('edit');
+        }
+    });
+  });
 
   // CKEditor
 
