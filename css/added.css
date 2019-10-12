@@ -212,3 +212,23 @@ nav-logo .logo > img {
 form div {
     margin-bottom: 20px;
 }
+
+.myadminbutton {
+    border-radius: 5px;
+    background-color: rgb(134, 134, 156);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 0.2em;
+    width: 5em;
+    margin-top: 5px;
+}
+.myadminbutton:hover {
+    background-color: rgb(2, 2, 70);
+    padding-right: 5px;
+}
+
+.managepost {
+    margin-top: 1em;
+}
