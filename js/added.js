@@ -165,7 +165,7 @@ $(document).ready(function() {
     url: 'http://localhost:3000/posts',
     success: function(posts){
       $.each(posts, function(i, post) {
-        $adminposts.append(`<li style="list-style-type:none;" data-id=${post.id}><a href="index.html"><h5><span class="noedit title">${post.title}</span></h5></a><br><input id="updateTitle" class="edit text-input" placeholder="Update Title"/><br><br><p><span class="noedit text">${post.body}</span><br><textarea id="updateText" class="edit text text-input" placeholder="Update Body"></textarea></p><button data-id=${post.id} id="updtbutton" class="updtbutton noedit myadminbutton">Update</button> <button data-id=${post.id} id="saveButton" class="saveButton edit myadminbutton">Save</button> <button data-id=${post.id} id="cancelButton" class="cancelButton edit myadminbutton">Cancel</button> <button data-id=${post.id} id="delbutton" class="delbutton myadminbutton">Delete</button><hr><br><br>`);
+        $adminposts.append(`<li style="list-style-type:none;" data-id=${post.id}><a href="index.html"><h5><span class="noedit title">${post.title}</span></h5></a><br><input id="updateTitle" class="edit titles text-input" placeholder="Update Title"/><br><br><p><span class="noedit body">${post.body}</span><br><textarea id="updateText" class="edit body text-input" placeholder="Update Body"></textarea></p><button data-id=${post.id} id="updtbutton" class="updtbutton noedit myadminbutton">Update</button> <button data-id=${post.id} id="saveButton" class="saveButton edit myadminbutton">Save</button> <button data-id=${post.id} id="cancelButton" class="cancelButton edit myadminbutton">Cancel</button> <button data-id=${post.id} id="delbutton" class="delbutton myadminbutton">Delete</button><hr><br><br>`);
       });
         
     }
@@ -182,6 +182,15 @@ $(document).ready(function() {
             $li.remove();
         }
     });
+  });
+
+  // Manage Post UPDATE
+
+  $adminposts.delegate('.updtbutton', 'click', function(){
+    var $li = $(this).closest('li');
+    $li.find('input.titles').val($li.find('span.title').html());
+    $li.find('textarea.body').val($li.find('span.body').html());
+    $li.addClass('edit');
 });
 
   // CKEditor
