@@ -124,13 +124,37 @@ $(document).ready(function() {
             }
         },
     });
-});
+  });
 
-// User Logout
+// Admin Logout
 
-$('.userlogout').click(function() {
-  localStorage.clear();
-});
+  $('.logoutBtn').click(function() {
+    localStorage.clear();
+    window.location.assign('adminlogin.html');
+  });
+
+  // Create Post
+
+  var $title = $('#title');
+  var $body = $('#body');
+  $('#newPostBtn').on('click', function(event){
+    event.preventDefault();
+    var post = {
+      title: $title.val(),
+      body: $body.val(),
+    };
+    $.ajax({
+      type: 'POST',
+      url: 'http://localhost:3000/posts',
+      data: post,
+      success: function(newPosts){
+        $posts.append('<h5>'+newPost.title+'</h5>');
+        $posts.append('<p>'+newPost.body+'</p>');
+        alert('Article Posted');
+        $('#postform').trigger('reset');
+      }
+    });
+  });
 
   // CKEditor
 
