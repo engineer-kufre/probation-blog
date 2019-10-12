@@ -147,29 +147,29 @@ $(document).ready(function() {
       type: 'POST',
       url: 'http://localhost:3000/posts',
       data: post,
-      success: function(newPosts){
-        $posts.append('<h5>'+newPost.title+'</h5>');
-        $posts.append('<p>'+newPost.body+'</p>');
-        alert('Article Posted');
+      success: function(newPost){
+        $title.append('<a href="index.html"><h5>'+newPost.title+'</h5></a>');
+        $body.append('<p>'+newPost.body+'</p>');
         $('#postform').trigger('reset');
+        alert('Article Posted');
       }
     });
   });
 
   // CKEditor
 
-  ClassicEditor
-  .create( document.querySelector( '#body' ), {
-      toolbar: [ 'heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', 'blockQuote' ],
-      heading: {
-          options: [
-              { model: 'paragraph', title: 'Paragraph', class: 'ck-heading_paragraph' },
-              { model: 'heading1', view: 'h1', title: 'Heading 1', class: 'ck-heading_heading1' },
-              { model: 'heading2', view: 'h2', title: 'Heading 2', class: 'ck-heading_heading2' }
-          ]
-      }
-  } )
-  .catch( error => {
-      console.log( error );
-  } );
+  // ClassicEditor
+  // .create( document.querySelector( '#body' ), {
+  //     toolbar: [ 'heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', 'blockQuote' ],
+  //     heading: {
+  //         options: [
+  //             { model: 'paragraph', title: 'Paragraph', class: 'ck-heading_paragraph' },
+  //             { model: 'heading1', view: 'h1', title: 'Heading 1', class: 'ck-heading_heading1' },
+  //             { model: 'heading2', view: 'h2', title: 'Heading 2', class: 'ck-heading_heading2' }
+  //         ]
+  //     }
+  // } )
+  // .catch( error => {
+  //     console.log( error );
+  // } );
 });
