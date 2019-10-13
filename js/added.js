@@ -227,6 +227,16 @@ $(document).ready(function() {
     });
   });
 
+  // Comment SHOW and HIDE
+
+  $("#hide").click(function() {
+    $("form").fadeOut("slow").hide();
+  });
+
+  $("#show").click(function() {
+    $("form").fadeIn("slow").show();
+  });
+
   // CKEditor
 
   // ClassicEditor
