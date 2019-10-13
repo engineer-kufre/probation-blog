@@ -178,6 +178,14 @@ nav-logo .logo > img {
     background-color: white;
     margin: 0 auto;
 }
+.input {
+    border: 1px solid rgb(2, 2, 70);
+    border-radius: 5px;
+}
+.text-input {
+    border: 1px solid rgb(2, 2, 70);
+    border-radius: 5px;
+}
 #mybutton{
     border-radius: 5px;
     background-color: rgb(134, 134, 156);
@@ -221,7 +229,7 @@ form div {
     text-align: center;
     font-size: 15px;
     padding: 0.2em;
-    width: 5em;
+    width: 6em;
     margin-top: 5px;
 }
 .myadminbutton:hover {
@@ -241,4 +249,52 @@ ul li.edit .edit{
 }
 ul li.edit .noedit{
     display: none;
+}
+
+.article {
+    margin: 5% 10% 5% 10%;
+}
+.post-head {
+    text-align: center;
+}
+.arttitle {
+    font-size: 350%;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(2, 2, 70);
+}
+.artbody {
+    text-align: justify;
+    font-size: 150%;
+    line-height: 32px;
+}
+.comment-form {
+    margin-left: 10%;
+    margin-right: 10%;
+    /* display: none; */
+}
+.comment {
+    border: 1px solid rgb(2, 2, 70);
+    border-radius: 5px;
+    width: 100%;
+}
+.comment-title {
+    text-align: center;
+    color: rgb(2, 2, 70);
+}
+
+.mycommentbutton {
+    border-radius: 5px;
+    background-color: rgb(2, 2, 70);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 0.2em;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 15px;
+}
+.mycommentbutton:hover {
+    background-color: rgb(134, 134, 156);
+    padding-right: 5px;
 }
