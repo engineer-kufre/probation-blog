@@ -270,7 +270,7 @@ ul li.edit .noedit{
 .comment-form {
     margin-left: 10%;
     margin-right: 10%;
-    /* display: none; */
+    display: none;
 }
 .comment {
     border: 1px solid rgb(2, 2, 70);

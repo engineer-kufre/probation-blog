@@ -41,7 +41,6 @@
             <article>
                 <div class="post-head">
                     <h1 class="arttitle"><strong>TITLE</strong></h1>
-                    <p><em>Date</em></p>
                 </div>
                 <div class="artbody">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident atque, at tenetur eius, assumenda cupiditate nisi qui similique eum voluptas obcaecati earum molestias repudiandae accusantium temporibus nulla nostrum corrupti. Ad?Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident atque, at tenetur eius, assumenda cupiditate nisi qui similique eum voluptas obcaecati earum molestias repudiandae accusantium temporibus nulla nostrum corrupti. Ad?Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident atque, at tenetur eius, assumenda cupiditate nisi qui similique eum voluptas obcaecati earum molestias repudiandae accusantium temporibus nulla nostrum corrupti. Ad?Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident atque, at tenetur eius, assumenda cupiditate nisi qui similique eum voluptas obcaecati earum molestias repudiandae accusantium temporibus nulla nostrum corrupti. Ad?Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident atque, at tenetur eius, assumenda cupiditate nisi qui similique eum voluptas obcaecati earum molestias repudiandae accusantium temporibus nulla nostrum corrupti. Ad?Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident atque, at tenetur eius, assumenda cupiditate nisi qui similique eum voluptas obcaecati earum molestias repudiandae accusantium temporibus nulla nostrum corrupti. Ad?</p>
@@ -51,11 +50,14 @@
                 <hr>
             </article>
             <form class="comment-form" id="comment-form">
-                <h3 class="comment-title"><strong>COMMENT</strong></h3>
-                <p>Username:</p>
-                <input type="text" class="comment"><br><br>
-                <textarea name="" id="" rows="10" class="comment" placeholder="Type your comment here"></textarea> <br>
-                <button id="" class="mycommentbutton">Submit Comment</button>
+                <h3 class="comment-title"><strong>COMMENTS</strong></h3>
+                <ul id="usercomment"></ul><br><br><br>
+                <p>Username:
+                    <!-- <ul id="usersname"></ul> -->
+                </p>
+                <input type="text" id="usernames" class="comment usercomment" placeholder="e.g Anonymous(if you haven't signed up)"><br><br>
+                <textarea name="comment" id="comment" rows="10" class="comment" placeholder="Your comment here"></textarea> <br>
+                <button id="newCommentBtn" class="mycommentbutton">Submit Comment</button>
             </form>
         </div>
         
