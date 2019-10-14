@@ -6,27 +6,6 @@
       "username": "Ku",
       "email": "eijioma@inmarng.com",
       "password": "itah"
-    },
-    {
-      "fullname": "Kufreabasi Ita",
-      "username": "Kufre",
-      "email": "engineer_kufre@yahoo.com",
-      "password": "ita",
-      "id": 2
-    },
-    {
-      "fullname": "Adamson Willy",
-      "username": "Adams",
-      "email": "chidichukwuemeka1@gmail.com",
-      "password": "adams",
-      "id": 3
-    },
-    {
-      "fullname": "gdls",
-      "username": "dga",
-      "email": "eijiomaa@inmarng.com",
-      "password": ".khv",
-      "id": 4
     }
   ],
   "admin": [
@@ -72,6 +51,58 @@
       "link": "post.html",
       "body": "FirstFirstFirstFirstFirstFirstFirstFirstFirster",
       "id": 2
+    }
+  ],
+  "comment-post1": [
+    {
+      "username": "Poster",
+      "comment": "Good",
+      "id": 1
+    },
+    {
+      "username": "Anon",
+      "comment": "hjklkkkkkkkkkkkkkkkkkkk",
+      "id": 2
+    },
+    {
+      "username": "Anonymous",
+      "comment": "Poor effort!",
+      "id": 3
+    },
+    {
+      "username": "",
+      "comment": "",
+      "id": 4
+    },
+    {
+      "username": "",
+      "comment": "",
+      "id": 5
+    },
+    {
+      "username": "",
+      "comment": "",
+      "id": 6
+    },
+    {
+      "username": "",
+      "comment": "",
+      "id": 7
+    },
+    {
+      "username": "Me",
+      "comment": "ajjajajajajajaj",
+      "id": 8
+    },
+    {
+      "username": "",
+      "comment": "",
+      "id": 9
+    },
+    {
+      "username": "Anon",
+      "comment": "fhjs ",
+      "id": 10
     }
   ]
 }
