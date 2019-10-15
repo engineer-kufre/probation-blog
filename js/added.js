@@ -8,6 +8,10 @@ $(document).ready(function() {
     const username = $('#username').val();
     const email = $('#email').val();
     const password = $('#password').val();
+    if (!fullname || !username || !password || !email) {
+      alert('Kindly fill in all fields');
+      return;
+    }
     $.ajax({
       method: 'GET',
       url: `http://localhost:3000/users?email=${email}`,
@@ -42,6 +46,10 @@ $(document).ready(function() {
       event.preventDefault();
       const usernameSI = $('#usernameSI').val();
       const passwordSI = $('#passwordSI').val();
+      if (!usernameSI || !passwordSI) {
+        alert('Kindly fill in all fields');
+        return;
+      }
       $.ajax({
           method: 'GET',
           url: `http://localhost:3000/users?username=${usernameSI}&password=${passwordSI}`,
@@ -74,6 +82,10 @@ $(document).ready(function() {
     const username = $('#username').val();
     const email = $('#email').val();
     const password = $('#password').val();
+    if (!fullname || !username || !password || !email) {
+      alert('Kindly fill in all fields');
+      return;
+    }
     $.ajax({
       method: 'GET',
       url: `http://localhost:3000/admin?email=${email}`,
@@ -108,6 +120,10 @@ $(document).ready(function() {
     event.preventDefault();
     const usernameSI = $('#usernameSI').val();
     const passwordSI = $('#passwordSI').val();
+    if (!usernameSI || !passwordSI) {
+      alert('Kindly fill in all fields');
+      return;
+    }
     $.ajax({
         method: 'GET',
         url: `http://localhost:3000/admin?username=${usernameSI}&password=${passwordSI}`,
@@ -197,6 +213,7 @@ $(document).ready(function() {
     $li.find('input.titles').val($li.find('span.title').html());
     $li.find('input.link').val($li.find('span.link').html());
     $li.find('textarea.body').val($li.find('span.body').html());
+    $li.find('textarea.summary').val($li.find('span.summary').html());
     $li.addClass('edit');
   });
 
@@ -214,6 +231,7 @@ $(document).ready(function() {
         title:$li.find('input.titles').val(),
         link:$li.find('input.link').val(),
         body:$li.find('textarea.body').val(),
+        summary:$li.find('textarea.summary').val(),
     };
     $.ajax({
         type: 'PUT',
@@ -223,6 +241,7 @@ $(document).ready(function() {
           $li.find('span.titles').html(post.title);
           $li.find('span.link').html(post.link);
           $li.find('span.body').html(post.body);
+          $li.find('span.summary').html(post.summary);
           $li.removeClass('edit');
           location.reload(); 
         }
