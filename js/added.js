@@ -138,12 +138,14 @@ $(document).ready(function() {
   var $title = $('#title');
   var $link = $('#link');
   var $body = $('#body');
+  var $summary = $('#summary');
   $('#newPostBtn').on('click', function(event){
     event.preventDefault();
     var post = {
       title: $title.val(),
       link: $link.val(),
       body: $body.val(),
+      summary: $summary.val(),
     };
     $.ajax({
       type: 'POST',
@@ -153,6 +155,7 @@ $(document).ready(function() {
         $title.append('<a href="index.html"><h5>'+newPost.title+'</h5></a>');
         $link.append(newPost.link);
         $body.append('<p>'+newPost.body+'</p>');
+        $summary.append('<p>'+newPost.summary+'</p>');
         $('#postform').trigger('reset');
         location.reload();       
       }
@@ -167,7 +170,7 @@ $(document).ready(function() {
     url: 'http://localhost:3000/posts',
     success: function(posts){
       $.each(posts, function(i, post) {
-        $adminposts.append(`<li style="list-style-type:none;" data-id=${post.id}><a href="${post.link}"><h5><span class="noedit title">${post.title}</span></h5></a><input id="updateTitle" class="edit titles text-input" placeholder="Update Title"/><p><span class="noedit link">${post.link}</span><br><input id="updateLink" class="edit link text-input" placeholder="Update Link"/></p><p><span class="noedit body">${post.body}</span><br><textarea id="updateText" class="edit body text-input" placeholder="Update Body"></textarea></p><button data-id=${post.id} id="updtbutton" class="updtbutton noedit myadminbutton">Update</button> <button data-id=${post.id} id="saveButton" class="saveButton edit myadminbutton">Save</button> <button data-id=${post.id} id="cancelButton" class="cancelButton edit myadminbutton">Cancel</button> <button data-id=${post.id} id="delbutton" class="delbutton myadminbutton">Delete</button><hr><br><br>`);
+        $adminposts.append(`<li style="list-style-type:none;" data-id=${post.id}><a href="${post.link}"><h5><span class="noedit title">${post.title}</span></h5></a><input id="updateTitle" class="edit titles text-input" placeholder="Update Title"/><p><span class="noedit link">${post.link}</span><br><input id="updateLink" class="edit link text-input" placeholder="Update Link"/></p><p><span class="noedit body">${post.body}</span><br><textarea id="updateText" class="edit body text-input" placeholder="Update Body" rows="5"></textarea></p><p><span class="noedit summary">${post.summary}</span><br><textarea id="updateSummary" class="edit summary text-input" placeholder="Update Summary" rows="5"></textarea></p><button data-id=${post.id} id="updtbutton" class="updtbutton noedit myadminbutton">Update</button> <button data-id=${post.id} id="saveButton" class="saveButton edit myadminbutton">Save</button> <button data-id=${post.id} id="cancelButton" class="cancelButton edit myadminbutton">Cancel</button> <button data-id=${post.id} id="delbutton" class="delbutton myadminbutton">Delete</button><hr><br><br>`);
       });
     }
   });
@@ -253,41 +256,86 @@ $(document).ready(function() {
   //   }
   // });
 
-  var $username = $('#usernames');
-  var $comment = $('#comment');
-  $('#newCommentBtn').on('click', function(event){
-    event.preventDefault();
-    var comment = {
-      username: $username.val(),
-      comment: $comment.val(),
-    };
-    $.ajax({
-      type: 'POST',
-      url: 'http://localhost:3000/comment-post1',
-      data: comment,
-      success: function(newComment){
-        $username.append(newComment.username);
-        $comment.append(newComment.comment);
-        $('#comment-form').trigger('reset');
-        location.reload();       
-      }
-    });
-  });
+  // var $username = $('#usernames');
+  // var $comment = $('#comment');
+  // $('#newCommentBtn').on('click', function(event){
+  //   event.preventDefault();
+  //   var comment = {
+  //     username: $username.val(),
+  //     comment: $comment.val(),
+  //   };
+  //   $.ajax({
+  //     type: 'POST',
+  //     url: 'http://localhost:3000/comment-post1',
+  //     data: comment,
+  //     success: function(newComment){
+  //       $username.append(newComment.username);
+  //       $comment.append(newComment.comment);
+  //       $('#comment-form').trigger('reset');
+  //       location.reload();       
+  //     }
+  //   });
+  // });
 
-    // Display Comment
+  //   // Display Comment
 
-  var $usercomments = $('#usercomment');
+  // var $usercomments = $('#usercomment');
+  // $.ajax({
+  //   type: 'GET',
+  //   url: 'http://localhost:3000/comment-post1',
+  //   success: function(comments){
+  //     $.each(comments, function(i, comment) {
+  //       $usercomments.append(`<li style="list-style-type:none;" data-id=${comment.id}><p><span style="font-size: 20px; color: rgb(2, 2, 70); text-decoration: underline;">${comment.username}</span></p><p><span class="link" style="text-align: justify;">${comment.comment}</span></p>`);
+  //     });
+  //   }
+  // });
+
+  // // AutoCAD Post Comments Manager
+
+  // var $username = $('#usernames');
+  // var $comment = $('#comment');
+  // $('#newCommentBtn').on('click', function(event){
+  //   event.preventDefault();
+  //   var comment = {
+  //     username: $username.val(),
+  //     comment: $comment.val(),
+  //   };
+  //   $.ajax({
+  //     type: 'POST',
+  //     url: 'http://localhost:3000/comment-post2',
+  //     data: comment,
+  //     success: function(newComment){
+  //       $username.append(newComment.username);
+  //       $comment.append(newComment.comment);
+  //       $('#comment-form').trigger('reset');
+  //       location.reload();       
+  //     }
+  //   });
+  // });
+
+  // var $usercomments = $('#usercomment');
+  // $.ajax({
+  //   type: 'GET',
+  //   url: 'http://localhost:3000/comment-post2',
+  //   success: function(comments){
+  //     $.each(comments, function(i, comment) {
+  //       $usercomments.append(`<li style="list-style-type:none;" data-id=${comment.id}><p><span style="font-size: 20px; color: rgb(2, 2, 70); text-decoration: underline;">${comment.username}</span></p><p><span class="link" style="text-align: justify;">${comment.comment}</span></p>`);
+  //     });
+  //   }
+  // });
+
+  // GET SUMMARY To Frontpage
+
+  var $frontendposts = $('#frontendpost');
   $.ajax({
     type: 'GET',
-    url: 'http://localhost:3000/comment-post1',
-    success: function(comments){
-      $.each(comments, function(i, comment) {
-        $usercomments.append(`<li style="list-style-type:none;" data-id=${comment.id}><p><span style="font-size: 20px; color: rgb(2, 2, 70); text-decoration: underline;">${comment.username}</span></p><p><span class="link" style="text-align: justify;">${comment.comment}</span></p>`);
+    url: 'http://localhost:3000/posts',
+    success: function(posts){
+      $.each(posts, function(i, post) {
+        $frontendposts.append(`<li style="list-style-type:none;" data-id=${post.id}><a href="${post.link}"><h5><span class="noedit title">${post.title}</span></h5></a><input id="updateTitle" class="edit titles text-input" placeholder="Update Title"/><p><span class="noedit summary">${post.summary}</span><a href="${post.link}">Read More</a><hr>`);
       });
     }
   });
-
-  
 
   // CKEditor
 
