@@ -47,10 +47,11 @@
   ],
   "posts": [
     {
-      "title": "First Poster",
-      "link": "post.html",
-      "body": "FirstFirstFirstFirstFirstFirstFirstFirstFirster",
-      "id": 2
+      "title": "History of AutoCAD",
+      "link": "autocad.html",
+      "body": "AutoCAD is a commercial computer-aided design (CAD) and drafting software application. Developed and marketed by Autodesk, AutoCAD was first released in December 1989 as a desktop app running on microcomputers with internal graphics controllers. Before AutoCAD was introduced, most commercial CAD programs ran on mainframe computers or minicomputers, with each CAD operator (user) working at a separate graphics terminal. Since 2010, AutoCAD was released as a mobile- and web app as well, marketed as AutoCAD 360.\n\nAutoCAD is used in the industry, by architects, project managers, engineers, graphic designers, city planners and other professionals. It was supported by 750 training centers worldwide in 1994.\n\nAutoCAD was derived from a program that began in 1977, and then released in 1979 called Interact CAD, also referred to in early Autodesk documents as MicroCAD, which was written prior to Autodesk's (then Marinchip Software Partners) formation by Autodesk cofounder Michael Riddle.\n\nThe first version by Autodesk was demonstrated at the 1982 Comdex and released that December. AutoCAD supported CP/M-80 computers. As Autodesk's flagship product, by March 1986 AutoCAD had become the most ubiquitous CAD program worldwide. The 2020 release marked the 34th major release of AutoCAD for Windows. The 2019 release marked the ninth consecutive year of AutoCAD for Mac. The native file format of AutoCAD is .dwg. This and, to a lesser extent, its interchange file format DXF, have become de facto, if proprietary, standards for CAD data interoperability, particularly for 2D drawing exchange. AutoCAD has included support for .dwf, a format developed and promoted by Autodesk, for publishing CAD data.",
+      "summary": "AutoCAD is a commercial computer-aided design (CAD) and drafting software application. Developed and marketed by Autodesk, AutoCAD was first released in December 1989 as a desktop app running on microcomputers with internal graphics controllers. Before AutoCAD was introduced...",
+      "id": 1
     }
   ],
   "comment-post1": [
@@ -103,6 +104,23 @@
       "username": "Anon",
       "comment": "fhjs ",
       "id": 10
+    },
+    {
+      "username": "",
+      "comment": "",
+      "id": 11
+    }
+  ],
+  "comment-post2": [
+    {
+      "username": "Admin",
+      "comment": "I love this!",
+      "id": 1
+    },
+    {
+      "username": "Anonymous",
+      "comment": "Horrible post! Don't you have better stuff to do?",
+      "id": 2
     }
   ]
 }
