@@ -105,7 +105,12 @@ nav-logo .logo > img {
 }
 #content-wrap {
     padding-bottom: 2.5rem;
-} 
+}
+
+.post-area {
+    margin: 2em 10% 2em 10%;
+}
+
 #footer {
     position: absolute;
     bottom: 0;
