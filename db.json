@@ -59,6 +59,27 @@
       "body": "AutoCAD is a commercial computer-aided design (CAD) and drafting software application. Developed and marketed by Autodesk, AutoCAD was first released in December 1989 as a desktop app running on microcomputers with internal graphics controllers. Before AutoCAD was introduced, most commercial CAD programs ran on mainframe computers or minicomputers, with each CAD operator (user) working at a separate graphics terminal. Since 2010, AutoCAD was released as a mobile- and web app as well, marketed as AutoCAD 360.\n\nAutoCAD is used in the industry, by architects, project managers, engineers, graphic designers, city planners and other professionals. It was supported by 750 training centers worldwide in 1994.\n\nAutoCAD was derived from a program that began in 1977, and then released in 1979 called Interact CAD, also referred to in early Autodesk documents as MicroCAD, which was written prior to Autodesk's (then Marinchip Software Partners) formation by Autodesk cofounder Michael Riddle.\n\nThe first version by Autodesk was demonstrated at the 1982 Comdex and released that December. AutoCAD supported CP/M-80 computers. As Autodesk's flagship product, by March 1986 AutoCAD had become the most ubiquitous CAD program worldwide. The 2020 release marked the 34th major release of AutoCAD for Windows. The 2019 release marked the ninth consecutive year of AutoCAD for Mac. The native file format of AutoCAD is .dwg. This and, to a lesser extent, its interchange file format DXF, have become de facto, if proprietary, standards for CAD data interoperability, particularly for 2D drawing exchange. AutoCAD has included support for .dwf, a format developed and promoted by Autodesk, for publishing CAD data.",
       "summary": "AutoCAD is a commercial computer-aided design (CAD) and drafting software application. Developed and marketed by Autodesk, AutoCAD was first released in December 1989 as a desktop app running on microcomputers with internal graphics controllers. Before AutoCAD was introduced...",
       "id": 1
+    },
+    {
+      "title": "SolidWorks: An Essential Modelling Tool",
+      "link": "solidworks.html",
+      "body": "SolidWorks is a solid modeling computer-aided design (CAD) and computer-aided engineering (CAE) computer program that runs primarily on Microsoft Windows. While it is possible to run SolidWorks on MacOS, that is not supported by SolidWorks. SolidWorks is published by Dassault Systèmes.\n\nSolidWorks is a solid modeler, and utilizes a parametric feature-based approach which was initially developed by PTC (Creo/Pro-Engineer) to create models and assemblies. The software is written on Parasolid-kernel.\n\nParameters refer to constraints whose values determine the shape or geometry of the model or assembly. Parameters can be either numeric parameters, such as line lengths or circle diameters, or geometric parameters, such as tangent, parallel, concentric, horizontal or vertical, etc. Numeric parameters can be associated with each other through the use of relations, which allows them to capture design intent.\n\nDesign intent is how the creator of the part wants it to respond to changes and updates. For example, you would want the hole at the top of a beverage can to stay at the top surface, regardless of the height or size of the can. SolidWorks allows the user to specify that the hole is a feature on the top surface, and will then honor their design intent no matter what height they later assign to the can.\n\nFeatures refer to the building blocks of the part. They are the shapes and operations that construct the part. Shape-based features typically begin with a 2D or 3D sketch of shapes such as bosses, holes, slots, etc. This shape is then extruded to add or cut to remove material from the part. Operation-based features are not sketch-based, and include features such as fillets, chamfers, shells, applying draft to the faces of a part, etc.\n\nBuilding a model in SolidWorks usually starts with a 2D sketch (although 3D sketches are available for power users). The sketch consists of geometry such as points, lines, arcs, conics (except the hyperbola), and splines. Dimensions are added to the sketch to define the size and location of the geometry. Relations are used to define attributes such as tangency, parallelism, perpendicularity, and concentricity. The parametric nature of SolidWorks means that the dimensions and relations drive the geometry, not the other way around. The dimensions in the sketch can be controlled independently, or by relationships to other parameters inside or outside of the sketch.\n\nIn an assembly, the analog to sketch relations are mates. Just as sketch relations define conditions such as tangency, parallelism, and concentricity with respect to sketch geometry, assembly mates define equivalent relations with respect to the individual parts or components, allowing the easy construction of assemblies. SolidWorks also includes additional advanced mating features such as gear and cam follower mates, which allow modeled gear assemblies to accurately reproduce the rotational movement of an actual gear train.\n\nFinally, drawings can be created either from parts or assemblies. Views are automatically generated from the solid model, and notes, dimensions and tolerances can then be easily added to the drawing as needed. The drawing module includes most paper sizes and standards (ANSI, ISO, DIN, GOST, JIS, BSI and SAC).",
+      "summary": "SolidWorks is a solid modeling computer-aided design (CAD) and computer-aided engineering (CAE) computer program that runs primarily on Microsoft Windows. While it is possible to run SolidWorks on MacOS, that is not supported by SolidWorks. SolidWorks is published by...",
+      "id": 2
+    },
+    {
+      "title": "Design Web Format (DWF)",
+      "link": "dwf.html",
+      "body": "Design Web Format (DWF) is an open and secure file format created by Autodesk and mainly used for representing rich design data. The file format is independent of the application hardware, software or operating system, and can capture all the design intent information that needs to be represented. Design Web Format is highly capable of including intelligent metadata relevant to design intent. Design Web Format can help project teams in standardizing on a common file format for transmitting design and drawing sets.\n\nDesign Web Format is not a replacement for other file formats such as CAD, but it helps creators, designers, publishers and engineers in viewing, printing and publishing rich design data. The file format was specifically made for representing design data, delivering multi-sheets, and with Web-ready capabilities along with printing and viewing capabilities. There are many viewers published by Autodesk for viewing and publishing the Design Web Format files. Alternatively, other third-party applications are also available for viewing Design Web Format files. One salient aspect of the Design Web Format is its ability to publish multiple layouts simultaneously.\n\nThere are some advantages associated with Design Web Format. First of all, it is open source. The file format makes the file highly compressed and thus the files are faster and smaller to transmit. Even with minimized file size, they maintain good quality. This is a benefit considering the overhead involved in typical design drawings and representations. Design Web Format functionality also helps creators in limiting the specific design data so that recipients are allowed to see what creators would allow.",
+      "summary": "Design Web Format (DWF) is an open and secure file format created by Autodesk and mainly used for representing rich design data. The file format is independent of the application hardware, software or operating system, and can capture all the design intent information that needs to be represented...",
+      "id": 3
+    },
+    {
+      "title": "Computer-Aided Design/Manufacturing (CAD/CAM)",
+      "link": "cadcam.html",
+      "body": "Computer-aided design/computer-aided manufacturing (CAD/CAM) refers to hardware and software systems that can be used in manufacturing or design processes. Professionals use CAD/CAM tools in multiple stages of product development; first in building designs in blueprints, and then in actually creating or assembling physical products and parts using computer-controlled equipment.\n\nCAD/CAM is now a major part of many physical manufacturing processes. It is widely used in metal working and industrial manufacturing, in woodworking and in other facilities where different kinds of physical products are made. This type of technology is also useful in planning industries like building engineering, architecture and other areas where CAD/CAM software can provide not only a conceptual plan, but a template for physical construction. In addition, modern CAD/CAM tools are now also being used in the medical field, as well as in other types of professional design and implementation processes.\n\nOne essential element of CAD/CAM software is the interface. A well-planned CAD/CAM interface helps engineers to understand the processes they are creating, or to work more quickly and efficiently. While many traditional CAD/CAM interfaces are composed of two-dimensional visual models with a lot of technical text tags attached, today’s modern CAD/CAM software interfaces often include three-dimensional visual models that help show many more elements of contract construction in multiple display screens. By combining technical drafting drawings with these kinds of three-dimensional visuals, CAD/CAM interfaces become much more capable and powerful tools for all sorts of engineering. Another innovation in CAD/CAM interfaces involves more complex file nesting and data storage designs that help to keep excessive information out of the way of the visual models that often provide a primary means of information.",
+      "summary": "Computer-aided design/computer-aided manufacturing (CAD/CAM) refers to hardware and software systems that can be used in manufacturing or design processes. Professionals use CAD/CAM tools in multiple stages of product development; first in building designs in blueprints, and then...",
+      "id": 4
     }
   ],
   "comment-post1": [
@@ -129,5 +150,39 @@
       "comment": "Horrible post! Don't you have better stuff to do?",
       "id": 2
     }
-  ]
+  ],
+  "comment-post3": [
+    {
+      "username": "Screen Rater",
+      "comment": "Tell me more. I love this!",
+      "id": 1
+    }
+  ],
+  "comment-post4": [
+    {
+      "username": "Anonymous",
+      "comment": "Always wanted to learn this. Thanks for posting XOXO",
+      "id": 1
+    },
+    {
+      "username": "Shegz",
+      "comment": "This post is too short! Add more information. CRAP!!!!!!!!!!!!",
+      "id": 2
+    }
+  ],
+  "comment-post5": [
+    {
+      "username": "Remilekun",
+      "comment": "You suck at this bro!",
+      "id": 1
+    },
+    {
+      "username": "Admin",
+      "comment": "Sorry to hear this. What can we do to improve your experience @Remilekun?",
+      "id": 2
+    }
+  ],
+  "comment-post6": [],
+  "comment-post7": [],
+  "comment-post8": []
 }
