@@ -61,12 +61,17 @@ $(document).ready(function() {
               if (response.length) {
                   localStorage.setItem('username', usernameSI);
                   window.location.assign('index.html');
+                  $('#userlogin').addClass('clear');
               } else {
                   alert('Username or Password Incorrect');
               }
           },
       });
   });
+
+  // $('#userlogin').click(function() {
+  //   $(this).addClass('clear');
+  // });
 
   // User Logout
 
