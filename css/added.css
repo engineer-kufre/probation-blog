@@ -1,8 +1,8 @@
-@media only screen and (max-width: 991px) {
+/* @media only screen and (max-width: 991px) {
     #nav .nav-menu {
         display: inline-block;
    }
-}
+} */
 
 #banner {
     background-color: rgb(2, 2, 70);
@@ -23,8 +23,9 @@
 
 #nav {
     height: 72px;
+    display: flex;
 }
-#nav .container {
+#nav {
     position: relative;
 }
 
@@ -41,7 +42,7 @@ nav-logo .logo > img {
 }
 
 .nav-menu {
-    margin-left: 10px;
+    margin-left: auto;
 }
 .nav-menu li a {
     position: relative;
@@ -52,9 +53,9 @@ nav-logo .logo > img {
     -webkit-transition: 0.2s color;
     transition: 0.2s color;
 }
-/* .nav-menu li:first-child a {
+.nav-menu li:first-child a {
     border-left: 1px solid #eceef2;
-} */
+}
 /* .nav-menu li a:after {
     content: '';
     position: absolute;
@@ -67,9 +68,36 @@ nav-logo .logo > img {
     transition: 0.2s width;
 } */
 .nav-menu li a:hover, .nav-menu li a:focus {
-    /* background-color: transparent;
-    text-decoration: none; */
+    background-color: transparent;
+    text-decoration: none;
     color: rgb(2, 2, 70);
+}
+.Navbar__Link-toggle {
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    #nav {
+      flex-direction: column;
+    }
+    .nav-menu {
+      margin-left:0;
+      display:none;
+    }
+    .Navbar__ToggleShow {
+        display: block;
+        width: 100px;
+    }
+    .Navbar__Link-toggle {
+        align-self: flex-end;
+        display: initial;
+        position: absolute;
+        cursor: pointer;
+    }
+}
+i {
+    padding-top: 13px;
+    padding-right: 13px;
+    color: rgb(2, 2, 70)
 }
 
 .mybutton {
