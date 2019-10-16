@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Design Web Format (DWF)</title>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/added.css"/>
+</head>
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+        <header>
+            <div id="banner">
+               <h1 class="title">DESIGN STUFF</h1>
+               <p class="titlep"><em>...all you need to know about engineering design today!</em></p>
+            </div>
+            <div id="nav">
+                <div>
+                    <div class="container">
+                        <div class="nav-logo">
+                            <a href="index.html" class="logo"><img src="./img/Engineering Design.jpg" alt="Design Stuff Logo"></a>
+                        </div>
+                        <ul class="nav-menu nav navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="userlogin.html">Sign In</a></li>
+                            <!-- <li><a class="userlogout" href="index.html">Log Out</a></li> -->
+                        </ul>
+                        <div>
+                            <input class="searchbox" type="text" placeholder="Content Search...">
+                            <button class="mybutton" type="submit">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="article">
+            <article>
+                <div class="post-head">
+                    <h1 class="arttitle"><strong>Design Web Format (DWF)</strong></h1>
+                </div>
+                <div class="artbody">
+                    <p>Design Web Format (DWF) is an open and secure file format created by Autodesk and mainly used for representing rich design data. The file format is independent of the application hardware, software or operating system, and can capture all the design intent information that needs to be represented. Design Web Format is highly capable of including intelligent metadata relevant to design intent. Design Web Format can help project teams in standardizing on a common file format for transmitting design and drawing sets.
+                    <br><br>
+                    Design Web Format is not a replacement for other file formats such as CAD, but it helps creators, designers, publishers and engineers in viewing, printing and publishing rich design data. The file format was specifically made for representing design data, delivering multi-sheets, and with Web-ready capabilities along with printing and viewing capabilities. There are many viewers published by Autodesk for viewing and publishing the Design Web Format files. Alternatively, other third-party applications are also available for viewing Design Web Format files. One salient aspect of the Design Web Format is its ability to publish multiple layouts simultaneously.
+                    <br><br>
+                    There are some advantages associated with Design Web Format. First of all, it is open source. The file format makes the file highly compressed and thus the files are faster and smaller to transmit. Even with minimized file size, they maintain good quality. This is a benefit considering the overhead involved in typical design drawings and representations. Design Web Format functionality also helps creators in limiting the specific design data so that recipients are allowed to see what creators would allow.</p>
+                </div>
+                <button id="show" class="myadminbutton">Show Comments</button>
+                <button id="hide" class="myadminbutton">Hide Comments</button><br><br><br>
+                <hr>
+            </article>
+            <form class="comment-form" id="comment-form">
+                <h3 class="comment-title"><strong>COMMENTS</strong></h3>
+                <ul id="usercomment"></ul><br><br><br>
+                <p>Username:
+                    <!-- <ul id="usersname"></ul> -->
+                </p>
+                <input type="text" id="usernames" class="comment usercomment" placeholder="e.g Anonymous(if you haven't signed up)"><br><br>
+                <textarea name="comment" id="comment" rows="10" class="comment" placeholder="Your comment here"></textarea> <br>
+                <button id="newCommentBtn" class="mycommentbutton">Submit Comment</button>
+            </form>
+        </div>
+        
+        </div>
+        <footer id="footer" class="myfooter">
+            <hr>
+            <div class="contacts">
+                <h6><b>CONTACT:</b></h6>
+                12, Moshood Abiola Way, Ikeja, Lagos.
+                <br>support@designstuff.org
+                <br>0804 194 1941</p>
+            </div>
+            <div>&copy Oct. 2019 <a style="color:white" href="adminlogin.html">Admin</a></div>
+        </footer>
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/added.js"></script>
+    <script src="./js/dwf.js"></script>
+
+</body>
+</html>

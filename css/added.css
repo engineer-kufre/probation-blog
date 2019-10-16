@@ -276,6 +276,7 @@ ul li.edit .noedit{
     font-size: 350%;
     font-family: 'Times New Roman', Times, serif;
     color: rgb(2, 2, 70);
+    padding-bottom: 0.5em;
 }
 .artbody {
     text-align: justify;
@@ -312,4 +313,9 @@ ul li.edit .noedit{
 .mycommentbutton:hover {
     background-color: rgb(134, 134, 156);
     padding-right: 5px;
+}
+
+.post-images {
+    display: block;
+    margin: 0 auto;
 }
