@@ -41,7 +41,7 @@ nav-logo .logo > img {
 }
 
 .nav-menu {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .nav-menu li a {
     position: relative;
@@ -52,10 +52,10 @@ nav-logo .logo > img {
     -webkit-transition: 0.2s color;
     transition: 0.2s color;
 }
-.nav-menu li:first-child a {
+/* .nav-menu li:first-child a {
     border-left: 1px solid #eceef2;
-}
-.nav-menu li a:after {
+} */
+/* .nav-menu li a:after {
     content: '';
     position: absolute;
     left: 0;
@@ -65,10 +65,10 @@ nav-logo .logo > img {
     height: 4px;
     -webkit-transition: 0.2s width;
     transition: 0.2s width;
-}
+} */
 .nav-menu li a:hover, .nav-menu li a:focus {
-    background-color: transparent;
-    text-decoration: none;
+    /* background-color: transparent;
+    text-decoration: none; */
     color: rgb(2, 2, 70);
 }
 
@@ -319,3 +319,7 @@ ul li.edit .noedit{
     display: block;
     margin: 0 auto;
 }
+
+/* .clear {
+    display: none;
+} */
