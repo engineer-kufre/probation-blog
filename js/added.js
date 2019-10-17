@@ -9,7 +9,12 @@ $(document).ready(function() {
     const email = $('#email').val();
     const password = $('#password').val();
     if (!fullname || !username || !password || !email) {
-      alert('Kindly fill in all fields');
+      Swal.fire({
+        title: 'Error!',
+        text: 'Kindly fill in all fields',
+        type: 'error',
+        confirmButtonText: 'OK'
+      })
       return;
     }
     $.ajax({
@@ -20,7 +25,12 @@ $(document).ready(function() {
       },
       success: function(response) {
         if (response.length) {
-          alert("User already exist");
+          Swal.fire({
+            title: 'Error!',
+            text: 'User already exists',
+            type: 'error',
+            confirmButtonText: 'OK'
+          })
         } else {
           $.ajax({
             method: 'POST',
@@ -47,7 +57,12 @@ $(document).ready(function() {
       const usernameSI = $('#usernameSI').val();
       const passwordSI = $('#passwordSI').val();
       if (!usernameSI || !passwordSI) {
-        alert('Kindly fill in all fields');
+        Swal.fire({
+          title: 'Error!',
+          text: 'Kindly fill in all fields',
+          type: 'error',
+          confirmButtonText: 'OK'
+        })
         return;
       }
       $.ajax({
@@ -61,9 +76,13 @@ $(document).ready(function() {
               if (response.length) {
                   localStorage.setItem('username', usernameSI);
                   window.location.assign('index.html');
-                  $('#userlogin').addClass('clear');
               } else {
-                  alert('Username or Password Incorrect');
+                Swal.fire({
+                  title: 'Error!',
+                  text: 'Username or Password Incorrect',
+                  type: 'error',
+                  confirmButtonText: 'OK'
+                })
               }
           },
       });
@@ -88,7 +107,12 @@ $(document).ready(function() {
     const email = $('#email').val();
     const password = $('#password').val();
     if (!fullname || !username || !password || !email) {
-      alert('Kindly fill in all fields');
+      Swal.fire({
+        title: 'Error!',
+        text: 'Kindly fill in all fields',
+        type: 'error',
+        confirmButtonText: 'OK'
+      })
       return;
     }
     $.ajax({
@@ -99,7 +123,12 @@ $(document).ready(function() {
       },
       success: function(response) {
         if (response.length) {
-          alert('User already exist');
+          Swal.fire({
+            title: 'Error!',
+            text: 'User already exists',
+            type: 'error',
+            confirmButtonText: 'OK'
+          })
         } else {
           $.ajax({
             method: 'POST',
@@ -126,7 +155,12 @@ $(document).ready(function() {
     const usernameSI = $('#usernameSI').val();
     const passwordSI = $('#passwordSI').val();
     if (!usernameSI || !passwordSI) {
-      alert('Kindly fill in all fields');
+      Swal.fire({
+        title: 'Error!',
+        text: 'Kindly fill in all fields',
+        type: 'error',
+        confirmButtonText: 'OK'
+      })
       return;
     }
     $.ajax({
@@ -141,7 +175,12 @@ $(document).ready(function() {
                 localStorage.setItem('username', usernameSI);
                 window.location.assign('createpost.html');
             } else {
-                alert('Username or Password Incorrect');
+              Swal.fire({
+                title: 'Error!',
+                text: 'Username or Password Incorrect',
+                type: 'error',
+                confirmButtonText: 'OK'
+              })
             }
         },
     });
