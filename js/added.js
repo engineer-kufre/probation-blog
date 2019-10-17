@@ -10,9 +10,9 @@ $(document).ready(function() {
     const password = $('#password').val();
     if (!fullname || !username || !password || !email) {
       Swal.fire({
-        title: 'Error!',
+        title: 'Warning!',
         text: 'Kindly fill in all fields',
-        type: 'error',
+        type: 'warning',
         confirmButtonText: 'OK'
       })
       return;
@@ -26,9 +26,9 @@ $(document).ready(function() {
       success: function(response) {
         if (response.length) {
           Swal.fire({
-            title: 'Error!',
+            title: 'Info!',
             text: 'User already exists',
-            type: 'error',
+            type: 'info',
             confirmButtonText: 'OK'
           })
         } else {
@@ -58,9 +58,9 @@ $(document).ready(function() {
       const passwordSI = $('#passwordSI').val();
       if (!usernameSI || !passwordSI) {
         Swal.fire({
-          title: 'Error!',
+          title: 'Warning!',
           text: 'Kindly fill in all fields',
-          type: 'error',
+          type: 'warning',
           confirmButtonText: 'OK'
         })
         return;
@@ -108,9 +108,9 @@ $(document).ready(function() {
     const password = $('#password').val();
     if (!fullname || !username || !password || !email) {
       Swal.fire({
-        title: 'Error!',
+        title: 'Warning!',
         text: 'Kindly fill in all fields',
-        type: 'error',
+        type: 'warning',
         confirmButtonText: 'OK'
       })
       return;
@@ -124,9 +124,9 @@ $(document).ready(function() {
       success: function(response) {
         if (response.length) {
           Swal.fire({
-            title: 'Error!',
+            title: 'Info!',
             text: 'User already exists',
-            type: 'error',
+            type: 'info',
             confirmButtonText: 'OK'
           })
         } else {
@@ -156,9 +156,9 @@ $(document).ready(function() {
     const passwordSI = $('#passwordSI').val();
     if (!usernameSI || !passwordSI) {
       Swal.fire({
-        title: 'Error!',
+        title: 'Warning!',
         text: 'Kindly fill in all fields',
-        type: 'error',
+        type: 'warning',
         confirmButtonText: 'OK'
       })
       return;
