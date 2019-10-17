@@ -6,6 +6,13 @@
       "username": "Ku",
       "email": "eijioma@inmarng.com",
       "password": "itah"
+    },
+    {
+      "fullname": "Imaobong Essien",
+      "username": "Ima",
+      "email": "ima@yahoo.com",
+      "password": "ima",
+      "id": 2
     }
   ],
   "admin": [
