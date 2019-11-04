@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AutoCAD History</title>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link type="text/css" rel="stylesheet" href="css/added.css"/>
+</head>
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+        <header>
+            <div id="banner">
+               <h1 class="title">DESIGN STUFF</h1>
+               <p class="titlep"><em>...all you need to know about engineering design today!</em></p>
+            </div>
+            <div id="nav">
+                <div class="nav-logo">
+                    <a href="index.html" class="logo"><img src="./img/Engineering Design.jpg" alt="Design Stuff Logo"></a>
+                </div>
+                <div class="Navbar__Link Navbar__Link-toggle">
+                    <i class="fa fa-bars fa-3x"></i>
+                </div>
+                <ul class="nav-menu nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="userlogin.html">Sign In</a></li>
+                    <!-- <li><a class="userlogout" href="index.html">Log Out</a></li> -->
+                </ul>
+                <!-- <div>
+                    <input class="searchbox" type="text" placeholder="Content Search...">
+                    <button class="mybutton" type="submit">Search</button>
+                </div> -->
+            </div>
+        </header>
+        <div class="article">
+            <article>
+                <div class="post-head">
+                    <h1 class="arttitle"><strong>History of AutoCAD</strong></h1>
+                </div>
+                <div class="artbody">
+                    <p>AutoCAD is a commercial computer-aided design (CAD) and drafting software application. Developed and marketed by Autodesk, AutoCAD was first released in December 1989 as a desktop app running on microcomputers with internal graphics controllers. Before AutoCAD was introduced, most commercial CAD programs ran on mainframe computers or minicomputers, with each CAD operator (user) working at a separate graphics terminal. Since 2010, AutoCAD was released as a mobile- and web app as well, marketed as AutoCAD 360. <br><br>
+
+                    AutoCAD is used in the industry, by architects, project managers, engineers, graphic designers, city planners and other professionals. It was supported by 750 training centers worldwide in 1994. <br><br>
+                    
+                    AutoCAD was derived from a program that began in 1977, and then released in 1979 called Interact CAD, also referred to in early Autodesk documents as MicroCAD, which was written prior to Autodesk's (then Marinchip Software Partners) formation by Autodesk cofounder Michael Riddle. <br><br>
+                    
+                    The first version by Autodesk was demonstrated at the 1982 Comdex and released that December. AutoCAD supported CP/M-80 computers. As Autodesk's flagship product, by March 1986 AutoCAD had become the most ubiquitous CAD program worldwide. The 2020 release marked the 34th major release of AutoCAD for Windows. The 2019 release marked the ninth consecutive year of AutoCAD for Mac. The native file format of AutoCAD is .dwg. This and, to a lesser extent, its interchange file format DXF, have become de facto, if proprietary, standards for CAD data interoperability, particularly for 2D drawing exchange. AutoCAD has included support for .dwf, a format developed and promoted by Autodesk, for publishing CAD data.</p>
+                </div>
+                <button id="show" class="myadminbutton">Show Comments</button>
+                <button id="hide" class="myadminbutton">Hide Comments</button><br><br><br>
+                <hr>
+            </article>
+            <form class="comment-form" id="comment-form">
+                <h3 class="comment-title"><strong>COMMENTS</strong></h3>
+                <ul id="usercomment"></ul><br><br><br>
+                <p>Username:
+                    <!-- <ul id="usersname"></ul> -->
+                </p>
+                <input type="text" id="usernames" class="comment usercomment" placeholder="e.g Anonymous(if you haven't signed up)"><br><br>
+                <textarea name="comment" id="comment" rows="10" class="comment" placeholder="Your comment here"></textarea> <br>
+                <button id="newCommentBtn" class="mycommentbutton">Submit Comment</button>
+            </form>
+        </div>
+        
+        </div>
+        <footer id="footer" class="myfooter">
+            <hr>
+            <div class="contacts">
+                <h6><b>CONTACT:</b></h6>
+                12, Moshood Abiola Way, Ikeja, Lagos.
+                <br>support@designstuff.org
+                <br>0804 194 1941</p>
+            </div>
+            <div>&copy Oct. 2019 <a style="color:white" href="adminlogin.html">Admin</a></div>
+        </footer>
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/added.js"></script>
+    <script src="./js/autocad.js"></script>
+    <script src="./js/togglenav.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SolidWorks: An Essential Modelling Tool</title>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link type="text/css" rel="stylesheet" href="css/added.css"/>
+</head>
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+        <header>
+            <div id="banner">
+               <h1 class="title">DESIGN STUFF</h1>
+               <p class="titlep"><em>...all you need to know about engineering design today!</em></p>
+            </div>
+            <div id="nav">
+                <div class="nav-logo">
+                    <a href="index.html" class="logo"><img src="./img/Engineering Design.jpg" alt="Design Stuff Logo"></a>
+                </div>
+                <div class="Navbar__Link Navbar__Link-toggle">
+                    <i class="fa fa-bars fa-3x"></i>
+                </div>
+                <ul class="nav-menu nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="userlogin.html">Sign In</a></li>
+                    <!-- <li><a class="userlogout" href="index.html">Log Out</a></li> -->
+                </ul>
+                <!-- <div>
+                    <input class="searchbox" type="text" placeholder="Content Search...">
+                    <button class="mybutton" type="submit">Search</button>
+                </div> -->
+            </div>
+        </header>
+        <div class="article">
+            <article>
+                <div class="post-head">
+                    <h1 class="arttitle"><strong>SolidWorks: An Essential Modelling Tool</strong></h1>
+                </div>
+                <div class="artbody">
+                    <p>
+                        <img src="./img/solidworks.jpg" alt="SolidWorks">
+                        <br><br>
+                        SolidWorks is a solid modeling computer-aided design (CAD) and computer-aided engineering (CAE) computer program that runs primarily on Microsoft Windows. While it is possible to run SolidWorks on MacOS, that is not supported by SolidWorks. SolidWorks is published by Dassault Systèmes.
+                        <br><br>
+                        SolidWorks is a solid modeler, and utilizes a parametric feature-based approach which was initially developed by PTC (Creo/Pro-Engineer) to create models and assemblies. The software is written on Parasolid-kernel.
+                        <br><br>
+                        Parameters refer to constraints whose values determine the shape or geometry of the model or assembly. Parameters can be either numeric parameters, such as line lengths or circle diameters, or geometric parameters, such as tangent, parallel, concentric, horizontal or vertical, etc. Numeric parameters can be associated with each other through the use of relations, which allows them to capture design intent.
+                        <br><br>
+                        Design intent is how the creator of the part wants it to respond to changes and updates. For example, you would want the hole at the top of a beverage can to stay at the top surface, regardless of the height or size of the can. SolidWorks allows the user to specify that the hole is a feature on the top surface, and will then honor their design intent no matter what height they later assign to the can.
+                        <br><br>
+                        Features refer to the building blocks of the part. They are the shapes and operations that construct the part. Shape-based features typically begin with a 2D or 3D sketch of shapes such as bosses, holes, slots, etc. This shape is then extruded to add or cut to remove material from the part. Operation-based features are not sketch-based, and include features such as fillets, chamfers, shells, applying draft to the faces of a part, etc.
+                        <br><br>
+                        Building a model in SolidWorks usually starts with a 2D sketch (although 3D sketches are available for power users). The sketch consists of geometry such as points, lines, arcs, conics (except the hyperbola), and splines. Dimensions are added to the sketch to define the size and location of the geometry. Relations are used to define attributes such as tangency, parallelism, perpendicularity, and concentricity. The parametric nature of SolidWorks means that the dimensions and relations drive the geometry, not the other way around. The dimensions in the sketch can be controlled independently, or by relationships to other parameters inside or outside of the sketch.
+                        <br><br>
+                        In an assembly, the analog to sketch relations are mates. Just as sketch relations define conditions such as tangency, parallelism, and concentricity with respect to sketch geometry, assembly mates define equivalent relations with respect to the individual parts or components, allowing the easy construction of assemblies. SolidWorks also includes additional advanced mating features such as gear and cam follower mates, which allow modeled gear assemblies to accurately reproduce the rotational movement of an actual gear train.
+                        <br><br>
+                        Finally, drawings can be created either from parts or assemblies. Views are automatically generated from the solid model, and notes, dimensions and tolerances can then be easily added to the drawing as needed. The drawing module includes most paper sizes and standards (ANSI, ISO, DIN, GOST, JIS, BSI and SAC).
+                    </p>
+                </div>
+                <button id="show" class="myadminbutton">Show Comments</button>
+                <button id="hide" class="myadminbutton">Hide Comments</button><br><br><br>
+                <hr>
+            </article>
+            <form class="comment-form" id="comment-form">
+                <h3 class="comment-title"><strong>COMMENTS</strong></h3>
+                <ul id="usercomment"></ul><br><br><br>
+                <p>Username:
+                    <!-- <ul id="usersname"></ul> -->
+                </p>
+                <input type="text" id="usernames" class="comment usercomment" placeholder="e.g Anonymous(if you haven't signed up)"><br><br>
+                <textarea name="comment" id="comment" rows="10" class="comment" placeholder="Your comment here"></textarea> <br>
+                <button id="newCommentBtn" class="mycommentbutton">Submit Comment</button>
+            </form>
+        </div>
+        
+        </div>
+        <footer id="footer" class="myfooter">
+            <hr>
+            <div class="contacts">
+                <h6><b>CONTACT:</b></h6>
+                12, Moshood Abiola Way, Ikeja, Lagos.
+                <br>support@designstuff.org
+                <br>0804 194 1941</p>
+            </div>
+            <div>&copy Oct. 2019 <a style="color:white" href="adminlogin.html">Admin</a></div>
+        </footer>
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/added.js"></script>
+    <script src="./js/solidworks.js"></script>
+    <script src="./js/togglenav.js"></script>
+</body>
+</html>
